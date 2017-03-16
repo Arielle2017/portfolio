@@ -1,0 +1,102 @@
+body {
+        background-color: black;
+}
+
+nav {
+      color: #89e0f0;
+      margin:5px;
+      padding: 25px;
+      background-color:transparent;
+      text-decoration:gray}
+        a:visited {color:pink; background-color:transparent; text-decoration:none}
+        a:hover   {color:yellow; background-color:transparent; text-decoration:underline}
+        a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+}
+
+article {
+          color: white;
+          padding: 20px;
+          margin: 20px;
+}
+
+h1 {
+      background-color: white;
+      color: hotpink;
+      font-size: 300%;
+      font-family:verdana;
+      text-align: center;
+      width: 80%;
+      padding: 55px;
+      margin: 150px;
+}
+
+p {
+    color: white;
+    padding: 5px;
+}
+
+aside {
+        background-color: #f4c2cf;
+}
+
+div.topic01 {
+              color: white;
+              font-size: 125%;
+              margin: 20px;
+              font-family: fantasy;
+              text-align: right;
+
+}
+
+div.topic02 {
+              color: white;
+              font-size: 125%;
+              margin: 20px;
+              font-family: monospace;
+              text-align: right;
+}
+
+summary {
+          background-color: white;
+          color: light gray;
+          font-size: 80%;
+          font-family:verdana;
+          border: solid;
+          border-color: #a8ee90;
+          text-align: left;
+          width: 21.4%;
+          margin: 40px;
+}
+
+div.image_sammy {
+                    border: solid;
+                    border-color: white;
+                    border-width: thick;
+                    padding: 30px;
+                    width: 28%;
+}
+
+div.image_takumi {
+                    border: double;
+                    border-color: white;
+                    border-width: medium;;
+                    padding: 30px;
+                    width: 28%;
+}
+
+figcaption {
+              color: white;
+              font-size: 125%;
+              text-align: left;
+}
+
+ul {
+      color: #ff7149;
+      background-color: white;
+      font-size: 125%;
+      text-align: left;
+}
+
+footer {
+          background-color: #ff7149;
+}
