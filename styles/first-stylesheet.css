@@ -11,40 +11,68 @@ nav {
         a:visited {color:pink; background-color:transparent; text-decoration:none}
         a:hover   {color:yellow; background-color:transparent; text-decoration:underline}
         a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+
+
+.float-header {
+                display: flex;
+                color: white;
+                width: auto;
+                margin: 20px;
 }
 
-article {
-          color: white;
-          padding: 20px;
-          margin: 20px;
+.float-header-child {
+                      position:relative;;
+                      width: auto;
+                      animation-duration: 3s;
+
 }
 
 h1 {
       background-color: white;
       color: hotpink;
-      font-size: 300%;
+      font-size: 200%;
       font-family:verdana;
       text-align: center;
-      width: 80%;
-      padding: 55px;
-      margin: 150px;
+      width: 100%;
+      height: 45px;
+      margin: 50px;
 }
 
 p {
     color: white;
-    padding: 5px;
+    padding: 2px;
 }
 
 aside {
         background-color: #f4c2cf;
 }
 
+
+.container01 {
+              display: flex;
+
+              margin:25px;
+              flex-direction: row;
+              position: relative;
+              justify-content: center;
+
+}
+
+.container02 {
+                display: flex;
+                flex-wrap: nowrap;
+                margin:25px;
+                flex-direction: column;
+                position:relative;
+                justify-content: space-around;
+}
+
 div.topic01 {
               color: white;
-              font-size: 125%;
-              margin: 20px;
+              font-size: 110%;
+
               font-family: fantasy;
-              text-align: right;
+              text-align: left;
 
 }
 
@@ -53,50 +81,102 @@ div.topic02 {
               font-size: 125%;
               margin: 20px;
               font-family: monospace;
-              text-align: right;
+              text-align: left;
 }
 
-summary {
+details {
+          color: black;
           background-color: white;
-          color: light gray;
-          font-size: 80%;
-          font-family:verdana;
-          border: solid;
-          border-color: #a8ee90;
-          text-align: left;
-          width: 21.4%;
-          margin: 40px;
+          border-color: lime;
+          border-width: 5rem;
+          margin: 25px;
+          width: 250px;
+          height: 20px;
+          position: relative;
+
 }
 
-div.image_sammy {
-                    border: solid;
-                    border-color: white;
-                    border-width: thick;
-                    padding: 30px;
-                    width: 28%;
+
+
+.container { background-color: white;
+            height: 300px;
+            width: 900px;
+
 }
 
-div.image_takumi {
+.color-change {
+  border-width: 5px;
+  display: block;
+  position:relative;
+  width: 100%;
+  height: 100px;
+  background-color: #0000FF;
+  animation-name: fourcolor;
+  animation-duration: 2s;
+    animation-name: fourcolor;
+    animation-duration: 8s;
+
+
+}
+  @keyframes fourcolor {
+0%   {background-color: red;}
+25%  {background-color: orange;}
+50%  {background-color: #f4c2cf;}
+100% {background-color: green; }
+
+
+
+.image_sammy {
+                  width: 324px;
+                  height: 248px;
+                  position: relative;
+}
+
+.image_takumi {
+                    flex-basis: 50px;
                     border: double;
                     border-color: white;
                     border-width: medium;;
                     padding: 30px;
                     width: 28%;
+                    position: relative;
 }
 
-figcaption {
-              color: white;
-              font-size: 125%;
-              text-align: left;
-}
 
-ul {
-      color: #ff7149;
-      background-color: white;
-      font-size: 125%;
-      text-align: left;
-}
+
+
 
 footer {
           background-color: #ff7149;
+          position:fixed;
+          border-bottom: 5rem;
+}
+
+
+
+.haha {
+  background: rgb(0, 255, 255);
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  height: 8vmin;
+  line-height: 4vmin;
+  width: 8vmin;
+  position: absolute;
+  bottom: 1%;
+  left: 5%;
+  transition: all 1s ease 0s;
+}
+
+.haha:hover {
+  background-color: purple;
+  color: white;
+  border-radius: 50%;
+  height: 30vmin;
+  line-height: 55vmin;
+  transform: rotate(180deg);
+  transform: rotate(720deg);
+  border-radius: 50%;
+  width: 30vmin;
+  left: 40%;
 }
